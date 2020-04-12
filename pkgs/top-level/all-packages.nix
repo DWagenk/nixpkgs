@@ -25330,6 +25330,8 @@ in
 
   utsushi = callPackage ../misc/drivers/utsushi { };
 
+  canon_pixma = callPackage ../misc/drivers/canon_pixma { };
+
   idsk = callPackage ../tools/filesystems/idsk { };
 
   igraph = callPackage ../development/libraries/igraph { };

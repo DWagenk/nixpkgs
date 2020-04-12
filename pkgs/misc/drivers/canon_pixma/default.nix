@@ -42,6 +42,8 @@ stdenv.mkDerivation rec {
     cp ../com/libs_bin64/* $out/lib/
   '';
 
+  NIX_LDFLAGS = "-L$out/lib/";
+
   installFlags = [ "SANE_BACKENDDIR=${placeholder "out"}/lib/sane" ];
 
   enableParallelBuilding = true;
